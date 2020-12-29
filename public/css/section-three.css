@@ -1,0 +1,16 @@
+section#three{
+    border-radius: 10px;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+}
+section#three .container-graph:first-child{
+    flex-basis: 60%;
+}
+section#three .container-graph:last-child{
+    flex-basis:40%;
+}
+.remark-icon.light{
+    background-color: unset;
+    color: inherit;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://rawgit.com/highcharts/rounded-corners/master/rounded-corners.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/section-two.css">
+    <link rel="stylesheet" href="./css/section-three.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+    <section id="one">
+        <div class="card-tiny">
+            <div class="header">
+                <span class="title-card">
+                    <h6 class="title-container">
+                        מאומתים חדשים אתמול
+                    </h6>
+                    <span class="info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-info" fill="currentColor">
+                            <g data-name="Layer 2">
+                            <g data-name="info">
+                                <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0zm-1-7a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path>
+                            </g>
+                            </g>
+                        </svg>
+                        <div class="info-text">
+                            חולה מספר
+                        </div>
+                    </span>
+                </span>
+                <h5 class="total-card">
+                    2,284
+                </h5>
+                <div class="addition-card">
+                    <span dir="ltr" class="amount">+767</span> מחצות
+                </div>
+                <div class="addition-card">
+                    <span dir="ltr" class="amount">369,272</span> סה"כ
+                </div>
+            </div>
+        </div>
+        <div class="card-tiny">
+            <div class="header">
+                <span class="title-card">
+                    <h6 class="title-container">
+                        חולים פעילים
+                    </h6>
+                    <span class="info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-info" fill="currentColor">
+                            <g data-name="Layer 2">
+                            <g data-name="info">
+                                <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0zm-1-7a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path>
+                            </g>
+                            </g>
+                        </svg>
+                        <div class="info-text">
+                            חולה מספר
+                        </div>
+                    </span>
+                </span>
+                <h5 class="total-card">
+                    2,284
+                </h5>
+                <div class="addition-card">
+                    <span dir="ltr" class="amount">+767</span> מחצות
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="legends-card">
+                    <div class="legend-item">
+                        <div class="item-label">
+                            בית / קהילה
+                        </div>
+                        <div class="item-amount">
+                            <span class="amount">22,194</span>
+                        </div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="item-label">
+                            מלון
+                        </div>
+                        <div class="item-amount">
+                            <span class="amount">254</span>
+                        </div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="item-label">
+                            בי"ח
+                        </div>
+                        <div class="item-amount">
+                            <span class="amount">254</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="card-tiny">
+            <div class="header">
+                <span class="title-card">
+                    <h6 class="title-container">
+                        חולים קשה
+                    </h6>
+                    <span class="info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-info" fill="currentColor">
+                            <g data-name="Layer 2">
+                            <g data-name="info">
+                                <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0zm-1-7a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path>
+                            </g>
+                            </g>
+                        </svg>
+                        <div class="info-text">
+                            חולה מספר
+                        </div>
+                    </span>
+                </span>
+                <h5 class="total-card">
+                    2,284
+                </h5>
+                <div class="addition-card">
+                    <span dir="ltr" class="amount">+767</span> מחצות
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="legends-card-colomn">
+                    <div class="legend-item">
+                        <div class="item-star" style="background-color: rgb(251, 83, 119);">
+                            
+                        </div>
+                        <div class="item-amount">
+                            מתוכם קריטי <span class="amount">254</span>
+                        </div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="item-star" style="background-color: rgb(230, 185, 87);">
+                        </div>
+                        <div class="item-amount">
+                            בינוני <span class="amount">254</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-tiny">
+            <div class="header">
+                <span class="title-card">
+                    <h6 class="title-container">
+                        חולים קשה
+                    </h6>
+                    <span class="info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-info" fill="currentColor">
+                            <g data-name="Layer 2">
+                            <g data-name="info">
+                                <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0zm-1-7a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path>
+                            </g>
+                            </g>
+                        </svg>
+                        <div class="info-text">
+                            חולה מספר
+                        </div>
+                    </span>
+                </span>
+                <h5 class="total-card">
+                    2,284
+                </h5>
+                <div class="addition-card">
+                    <span dir="ltr" class="amount">+767</span> מחצות
+                </div>
+            </div>
+            <button class="show-trend">
+                <div class="bar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-bar-chart-2" fill="currentColor">
+                        <g data-name="Layer 2">
+                           <g data-name="bar-chart-2">
+                              <rect width="24" height="24" transform="rotate(90 12 12)" opacity="0"></rect>
+                              <path d="M12 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z"></path>
+                              <path d="M19 4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1z"></path>
+                              <path d="M5 12a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1z"></path>
+                           </g>
+                        </g>
+                    </svg>
+                </div>
+                <span class="text">מגמת שינוי יומית</span>
+            </button>
+        </div>
+        <div class="card-tiny">
+            <div class="header">
+                <span class="title-card">
+                    <h6 class="title-container">
+                        חולים קשה
+                    </h6>
+                    <span class="info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-info" fill="currentColor">
+                            <g data-name="Layer 2">
+                            <g data-name="info">
+                                <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0zm-1-7a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path>
+                            </g>
+                            </g>
+                        </svg>
+                        <div class="info-text">
+                            חולה מספר
+                        </div>
+                    </span>
+                </span>
+                <h5 class="total-card">
+                    2,284
+                </h5>
+                <div class="addition-card">
+                    <span dir="ltr" class="amount">+767</span> מחצות
+                </div>
+            </div>
+            <button class="show-trend">
+                <div class="bar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-bar-chart-2" fill="currentColor">
+                        <g data-name="Layer 2">
+                           <g data-name="bar-chart-2">
+                              <rect width="24" height="24" transform="rotate(90 12 12)" opacity="0"></rect>
+                              <path d="M12 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z"></path>
+                              <path d="M19 4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1z"></path>
+                              <path d="M5 12a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1z"></path>
+                           </g>
+                        </g>
+                    </svg>
+                </div>
+                <span class="text">מגמת שינוי יומית</span>
+            </button>
+        </div>
+        <div class="card-tiny">
+            <div class="header">
+                <span class="title-card">
+                    <h6 class="title-container">
+                        חולים קשה
+                    </h6>
+                    <span class="info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-info" fill="currentColor">
+                            <g data-name="Layer 2">
+                            <g data-name="info">
+                                <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0zm-1-7a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path>
+                            </g>
+                            </g>
+                        </svg>
+                        <div class="info-text">
+                            חולה מספר
+                        </div>
+                    </span>
+                </span>
+                <h5 class="total-card">
+                    2,284
+                </h5>
+                <div class="addition-card">
+                    <span dir="ltr" class="amount">92,629</span> בדיקות אתמול
+                </div>
+            </div>
+            <button class="show-trend">
+                <div class="bar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-bar-chart-2" fill="currentColor">
+                        <g data-name="Layer 2">
+                           <g data-name="bar-chart-2">
+                              <rect width="24" height="24" transform="rotate(90 12 12)" opacity="0"></rect>
+                              <path d="M12 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z"></path>
+                              <path d="M19 4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1z"></path>
+                              <path d="M5 12a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1z"></path>
+                           </g>
+                        </g>
+                    </svg>
+                </div>
+                <span class="text">מגמת שינוי יומית</span>
+            </button>
+        </div>    
+    </section>
+    <section id="two">
+        <div class="title-section">
+            מדדי התפשטות בהסתכלות שבועית
+        </div>
+        <div class="graphs">
+            <div class="container-graph">
+                <h6 class="title-container">
+                    מגמת שינוי במאומתים חדשים וקצב הכפלה
+                </h6>
+                <div class="remark-container">
+                    <span class="remark-icon">i</span>
+                    % שינוי בממוצע מאומתים חדשים שבועי, ומספר הימים להכפלת הנדבקים (בסוגריים)
+                </div>
+                <div id="Trend_of_change"></div>
+            </div>
+            <div class="container-graph">
+                <h6 class="title-container">
+                    מספר החולים קשה וקריטי
+                </h6>
+                <div id="criticalPatients"></div>
+            </div>
+            <div class="container-graph">
+                <h6 class="title-container">
+                    מספר המאומתים החדשים מחוץ לאזורי ההתפשטות
+                </h6>
+                <div class="remark-container">
+                    <span class="remark-icon">i</span>
+                    הנתונים אינם כוללים מאומתים מישובים אדומים, מוסדות גריאטריים וחוזרים מחו"ל
+                </div>
+                <div id="newSurpriseIll"></div>
+            </div>
+        </div>
+    </section>
+    <section id="three">
+        <div class="container-graph">
+            <h6 class="title-container">
+                עקומה אפידמית
+            </h6>
+            <div class="remark-container">
+                <span class="remark-icon light"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-bulb-outline" fill="currentColor"><g data-name="Layer 2"><g data-name="bulb"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect><path d="M12 7a5 5 0 0 0-3 9v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a5 5 0 0 0-3-9zm1.5 7.59a1 1 0 0 0-.5.87V20h-2v-4.54a1 1 0 0 0-.5-.87A3 3 0 0 1 9 12a3 3 0 0 1 6 0 3 3 0 0 1-1.5 2.59z"></path><path d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1z"></path><path d="M21 11h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"></path><path d="M5 11H3a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"></path><path d="M7.66 6.42L6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28 1 1 0 0 0 .72-.31 1 1 0 0 0-.06-1.41z"></path><path d="M19.19 5.05a1 1 0 0 0-1.41 0l-1.44 1.37a1 1 0 0 0 0 1.41 1 1 0 0 0 .72.31 1 1 0 0 0 .69-.28l1.44-1.39a1 1 0 0 0 0-1.42z"></path></g></g></svg></span>
+                מספר הנדבקים היום הינו כפול מהמספר לפני 95 ימים
+            </div>
+            <div id="infectedPerDate"></div>
+        </div>
+        <div class="container-graph">
+            <h6 class="title-container">
+                עקומה אפידמית
+            </h6>
+            <div class="remark-container">
+                <span class="remark-icon light"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="eva eva-bulb-outline" fill="currentColor"><g data-name="Layer 2"><g data-name="bulb"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect><path d="M12 7a5 5 0 0 0-3 9v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a5 5 0 0 0-3-9zm1.5 7.59a1 1 0 0 0-.5.87V20h-2v-4.54a1 1 0 0 0-.5-.87A3 3 0 0 1 9 12a3 3 0 0 1 6 0 3 3 0 0 1-1.5 2.59z"></path><path d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1z"></path><path d="M21 11h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"></path><path d="M5 11H3a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"></path><path d="M7.66 6.42L6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28 1 1 0 0 0 .72-.31 1 1 0 0 0-.06-1.41z"></path><path d="M19.19 5.05a1 1 0 0 0-1.41 0l-1.44 1.37a1 1 0 0 0 0 1.41 1 1 0 0 0 .72.31 1 1 0 0 0 .69-.28l1.44-1.39a1 1 0 0 0 0-1.42z"></path></g></g></svg></span>
+                מספר הנדבקים היום הינו כפול מהמספר לפני 95 ימים
+            </div>
+            <div id="infectedPerDate"></div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/graphs.js"></script>
+</body>
+</html>
