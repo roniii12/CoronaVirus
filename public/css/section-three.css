@@ -3,6 +3,7 @@ section#three{
     overflow: visible;
     display: flex;
     flex-direction: row;
+    margin-bottom: 1.3rem;
 }
 section#three .container-graph:first-child{
     flex-basis: 60%;
@@ -13,4 +14,16 @@ section#three .container-graph:last-child{
 .remark-icon.light{
     background-color: unset;
     color: inherit;
+}
+
+.percentOfInfected{
+    z-index: 2;
+    color: black;
+    background-color: #fff;
+    border: 2.4px rgb(28 125 126) solid;
+    border-radius: 4px;
+    padding: 1px;
+    line-height: 1;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+    transform: translateX(-50%);
 }

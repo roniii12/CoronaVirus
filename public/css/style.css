@@ -42,6 +42,12 @@
     transform: translateY(-0.05rem);
     cursor: default;
 }
+.highcharts-legend-item > span{
+    overflow: visible !important;
+}
+.highcharts-legend-item .highcharts-graph, .highcharts-a11y-proxy-container{
+    display: none !important;
+}
 div[aria-label='Toggle series visibility'] .highcharts-a11y-proxy-button{
     display: none !important;
 }
@@ -161,6 +167,7 @@ section#one{
     margin: 5px;
     padding: 4px;
     border-radius: 50%;
+    height: 0;
 }
 .show-trend{
     display: flex;

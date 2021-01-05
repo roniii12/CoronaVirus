@@ -33,6 +33,7 @@ section#two{
     overflow: hidden;
     background-color: #fff;
     margin: 0 10px;
+    height: 20.5rem;
 }
 .container-graph:first-child, .container-graph:last-child{
     border-right: inherit;
@@ -44,7 +45,7 @@ section#two{
 .container-graph:last-child{
     margin-left: 0;
 }
-.container-graph .title-container{
+.container-graph > .title-container, .container-graph > .header{
     padding: 10px 15px 0;
 }
 .remark-container{
