@@ -1,4 +1,4 @@
-section#three{
+section#four{
     border-radius: 10px;
     overflow: visible;
     display: flex;
@@ -6,22 +6,25 @@ section#three{
     margin-bottom: 1.3rem;
 }
 
-section#three .container-graph:first-child{
-    flex-basis: 60%;
+section#four .container-graph:first-child{
+    flex-basis: 66.6666666667%;
 }
-.header{
+section#four .container-graph:last-child{
+    flex-basis: 36.4444444443%;
+}
+.container-graph .header{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.titles{
+.container-graph .titles{
     line-height: 2;
     flex-grow: 1;
 }
-.titles .title-container{
+.container-graph .titles .title-container{
     margin: 0;
 }
-.titles .seconed-title{
+.container-graph .titles .seconed-title{
     font-size: 12px;
     font-weight: 600;
 }
@@ -61,4 +64,37 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration
  {
   -webkit-appearance:none;
-} 
+}
+
+.scrollable{
+    direction: ltr;
+}
+
+.container-graph table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow: auto;
+    direction: rtl;
+}
+
+.header-table{
+    background-color: #e6f1f3;
+}
+
+.header-table-button{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    padding: 0;
+}
+
+.header-table  th:first-child{
+    padding-right: 2px;
+    width: 150px !important;
+    text-align: start;
+}
+
+.header-table  th:not(:first-child){
+    padding-right: 5px;
+}

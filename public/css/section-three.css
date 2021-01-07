@@ -6,7 +6,7 @@ section#three{
     margin-bottom: 1.3rem;
 }
 section#three .container-graph:first-child{
-    flex-basis: 60%;
+    flex-basis: 58.3333333333%;
 }
 section#three .container-graph:last-child{
     flex-basis:40%;
