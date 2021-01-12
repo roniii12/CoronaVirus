@@ -1,0 +1,53 @@
+section#five{
+    border-radius: 10px;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.3rem;
+}
+
+section#five .container-graph:first-child{
+    flex: 41.6666666667%;
+}
+
+section#five .container-graph:nth-child(2){
+    flex: 25%;
+}
+
+section#five .container-graph:last-child{
+    flex: 33.3333333333%;
+}
+
+section#five tbody tr{
+    height: 50px;
+}
+
+.insert-table-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.chart-percent{
+    display: block;
+    width: 50px;
+    height: 10px;
+    background-color: rgb(239,245,249);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.chart-percent-fill{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(80,203,253);
+}
+
+.insert-table-flex > span.noInformation{
+    color: #9aa1a7;
+    /* transform: translateY(calc(-50% + 5px)); */
+}

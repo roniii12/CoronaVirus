@@ -1,6 +1,6 @@
 Highcharts.chart('Trend_of_change', {
     chart: {
-        height: 252,
+        height: 262,
         type: 'area',
         spacing: [10, 10, 45, 0],
     },
@@ -79,7 +79,7 @@ Highcharts.chart('Trend_of_change', {
 
 Highcharts.chart('criticalPatients', {
     chart: {
-        height: 276,
+        height: 290,
         type: 'area',
         spacing: [10, 80, 35, 10]
     },
@@ -163,7 +163,7 @@ Highcharts.chart('criticalPatients', {
 
 Highcharts.chart('newSurpriseIll', {
     chart: {
-        height: 252,
+        height: 262,
         type: 'column',
         spacing: [15, -10, 40, 10],
         borderRadius: 10
@@ -229,7 +229,7 @@ Highcharts.chart('newSurpriseIll', {
 
 Highcharts.chart('infectedPerDate', {
     chart: {
-        height: 252,
+        height: 262,
         type: 'area',
         spacing: [10, 10, 45, 0],
     },
@@ -374,7 +374,7 @@ Highcharts.chart('infectedPerDate', {
 
 Highcharts.chart('hardInfectedPerDate', {
     chart: {
-        height: 252,
+        height: 262,
         type: 'line',
         spacing: [10, 10, 45, 0],
         animation: {
@@ -515,9 +515,9 @@ Highcharts.chart('hardInfectedPerDate', {
 
 Highcharts.chart('dailyTests', {
     chart: {
-        height: 252,
+        height: 262,
         type: 'column',
-        spacing: [15, 20, 3, 10],
+        spacing: [15, 15, 3, 10],
         borderRadius: 10
     },
     title: {
@@ -680,4 +680,91 @@ Highcharts.chart('dailyTests', {
         }*/
         series.render();
     })
+});
+
+
+var originalZ;
+Highcharts.chart('missingStaff', {
+    chart: {
+        type: 'variablepie',
+        animation: {
+        	duration: 100
+        },
+        // reflow: false,
+        height: 262
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        headerFormat: '',
+        pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+            'Area (square km): <b>{point.y}</b><br/>' +
+            'Population density (people per square km): <b>{point.z}</b><br/>'
+    },
+    plotOptions:{
+      variablepie:{
+        animation: false,
+        center: ["56%", "45%"],
+        point:{
+          events:{
+            mouseOver:function(){
+            	originalZ = this.z;
+              this.update({
+              	z:6
+              });
+            },
+            mouseOut:function(){
+            	this.update({
+              	z: originalZ
+              })
+            }
+          }
+        },
+        states:{
+        	hover:false
+        }
+      }
+    },
+    credits:{
+    	enabled: false
+    },
+    tooltip:{
+        enabled: false,
+    },
+    series: [{
+         pointSize: 80,
+        // innerSize: 90,
+        // zMin: 0,
+        // minSize:10,
+        size: '150',
+        innerSize: '100',
+        sizeBy: 'radius',
+        zMin:5,
+        data: [{
+            name: 'רופאים/ות',
+            y: 671,
+            z: 5,
+        }, {
+            name: 'אחים/ות',
+            y: 1466,
+            z: 5,
+        }, {
+            name: 'מקצועות אחרים',
+            y: 3543,
+            z: 5,
+        }, ],
+        dataLabels:{
+            enabled:true,
+            format:"{y}",
+            inside:true,
+            // /color:"black",
+            // textPath:{
+            //     enabled:true
+            // },
+            connectorShape: 'crookedLine',
+                crookDistance: '80%',
+                alignTo: 'connectors',
+        }
+    }]
 });
